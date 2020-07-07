@@ -8,12 +8,13 @@
 		position: relative;
 		&:before {
 			position: absolute;
-			content: "";
+			// content: "";
 			left: 0;
 			bottom: 0;
 			right: 0;
 			top: 0;
-			background: rgba($black, .4);
+			opacity: 1;
+		;
 		}
 	}
 	.player {
@@ -22,12 +23,12 @@
 		width: 100%;
 	}
 	&, & > .container > .row {
-		min-height: 600px;
+		min-height: 300px;
 		height: calc(100vh);
 	}
 	&.inner-page-cover {
 		&, & > .container > .row {
-			min-height: 500px;
+			min-height: 300px;
 			height: calc(30vh);		
 		}
 	}
@@ -117,11 +118,11 @@
 		position: absolute;
 		content: "";
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: rgba($primary, .8);
+		background-color: #fffff!important;
 		z-index: 2;
 		height: 100%;
 		width: 100%;
-		opacity: 0;
+		opacity: 1;
 		visibility: hidden;
 		transition: .3s all ease;
 	}
@@ -1308,7 +1309,7 @@
 	text-align: center;
 	h3 {
 		font-size: 1.3rem;
-		color: $black;
+		color: #333333;
 		margin-bottom: 1.5rem;
 	}
 	.number {
@@ -1569,7 +1570,7 @@
 .block-services-1 {
 	color: #999;
 	h3 {
-		color: $black;
+		color: #333333;
 	}
 	.block-service-1-more {
 		transition: .3s all ease;
@@ -1599,7 +1600,7 @@
 		.block-service-1-heading {
 			font-size: 20px;
 			a {
-				color: $black;
+				color: #333333;
 				&:hover {
 					color: $primary;
 				}
